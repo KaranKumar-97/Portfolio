@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karan Kumar 👨‍💻</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@500&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d95b43cc6e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Navigation section starts from here -->
+    <section id="navigation-section">
+        <div id="header">
+            <div class="container" id="nav_container_no_y_padding">
+                <div class="navbar">
+                    <nav>
+                        <img src="assets/logo1.png" alt="my_logo_image" class="logo">
+
+                        <ul id="sidemenu">
+                            <li><a href="#navigation-section">Home</a></li>
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#my-skills-section">Skills</a></li>
+                            <li><a href="#Projects-section">Projects</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="navbar_shrink()"></i>
+                        </ul>
+
+                        <!-- To be shown on small devices -->
+                        <i class="fa-solid fa-bars" onclick="navbar_expand()"></i>
+                    </nav>
+
+                </div>
+                <div  class="herosection">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="header-text">
+                        <p>Hello,</p>
+                        <h1>I'm <span>Karan</span> Kumar</h1>
+                        <h2><span id="name"></span></h2>
+                        <a href="assets/Karan's Resume.pdf" class="btn btn2" style="scale: 0.7;position: relative;margin-left: -2rem;">My Resume</a>
+                    </div>
+                    <img data-aos="fade-left" data-aos-duration="1000" class="mainpic" src="assets/mainpic.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section begins from here  -->
+    <section id="about-section">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div data-aos="fade-right" data-aos-duration="1000" class="about-col-1">
+                        <img src="assets/pp1.jpg" alt="Karan's image">
+                    </div>&nbsp;
+
+                    <div data-aos="fade-up" data-aos-duration="1000" class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi! Thanks for visiting my profile. My name is Karan Kumar and I am a third year student at Maharaja Surajmal Institute of Technology, pursuing Bachelors of Technology in the field of Computer Science. My intersts lies in FrontEnd Web Development.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                            <!-- <p class="tab-links" onclick="opentab('skills')">Education</p> -->
+                        </div>
+
+                        <!-- Certifications Section -->
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>(08/2022 - 12/2022)</span><br>Coding Ninja DSA Course</li>
+                                <li><span>(05/2023 - 08/2023)</span><br>GirlScript Summer of Code</li>
+                            </ul>
+                        </div>
+
+                        <!-- Education section -->
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br> B.Tech CSE | Maharaja Surajmal Institute of Technology, Janakpuri</li>
+                                <li><span>2018-2020</span><br> CBSE 12th | M.S Memorial Academy, Patna</li>
+                                <li><span>2018</span><br> CBSE 10th | Sharons Public School, Patna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section starts from here -->
+    <section id="my-skills-section">
+        <div id="my-skills">
+            <div data-aos="fade-up" data-aos-duration="1000" class="container">
+                <h1 class="sub-title">MY SKILLS</h1>
+
+                <!-- This div is divided in three columns -->
+                <div class="skill-list">
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/html5.svg" width="50px" alt="">
+                        <h3>HTML</h3>                     
+                    </div>
+
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/css.svg" width="50px" alt="">
+                        <h3>CSS</h3>                       
+                    </div>
+
+                    <div>
+                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="60px" alt="">
+                        <h3>BootStrap</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/tailwindcss.svg" width="50px" alt="">
+                        <h3>Tailwind</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/javascript.svg" width="50px" alt="">
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/react.svg" width="50px" alt="">
+                        <h3>React</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://www.sneharatnani.com/icons/git.svg" width="50px" alt="">
+                        <h3>Git</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://static-00.iconduck.com/assets.00/github-icon-512x497-oppthre2.png" width="50px" alt="">
+                        <h3>GitHub</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="50px" alt="">
+                        <h3>C++</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" width="50px" alt="">
+                        <h3>Adobe Illustrator</h3>
+                    </div>
+
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" width="50px" alt="">
+                        <h3>Premier Pro</h3>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section starts from here -->
+    <section id="Projects-section">
+        <div id="Projects">
+            <div data-aos="fade-up" data-aos-duration="1000" class="container">
+                <h1 class="sub-title">MY PERSONAL PROJECTS</h1>
+
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="https://user-images.githubusercontent.com/105391077/261558234-12566646-908c-42ee-8652-18c515c18ef0.png" style="width: 110%;" alt="project_image">
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>The app allows users to fetch their current location's weather as well as search for weather details of any city.</p>
+                            <a href="https://github.com/KaranKumar-97/Weather-App" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="https://user-images.githubusercontent.com/105391077/263237713-46dc2f0b-5258-48e1-a58f-ade9acb5a98b.png" style="width: 130%;"  alt="project_image">
+                        <div class="layer">
+                            <h3>QR Code Generator</h3>
+                            <p>This web application allows users to generate QR codes for various purposes easily and quickly.
+                            </p>
+                            <a href="https://github.com/KaranKumar-97/QR-Generator" target="_blank"> <i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="https://user-images.githubusercontent.com/105391077/263238921-7933ba62-d973-4408-a251-77b5b8f0bdf2.png" style="width: 130%;" alt="project_image">
+                        <div class="layer">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p> Classic Tic-Tac-Toe game made using HTML,CSS and JavaScript </p>
+                            <a href="https://github.com/KaranKumar-97/Tic-Tac-Toe"
+                                target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="https://user-images.githubusercontent.com/105391077/263261574-732aef0c-68d6-46e0-8580-dbc931b11723.png" style="width: 130%;" alt="project_image">
+                        <div class="layer">
+                            <h3>Modern Chair</h3>
+                            <p>A Responsive Modern chair site which changes background and chair colour according to the selected option</p>
+                            <a href="https://github.com/KaranKumar-97/Modern-Chair"
+                                target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Button for see more projects -->
+                <a href="https://github.com/KaranKumar-97/" class="btn" target="_blank">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section starts from here -->
+    <section id="contact-section">
+        <div data-aos="fade-up" data-aos-duration="1000" id="contact">
+            <div  class="container">
+
+                <!-- Row div will be divided vertically in two columns -->
+                <div class="row">
+
+                    <!-- left part of contact -->
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>Karankumar.msit@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-7004087962</p>
+
+                        <!-- Social icons from fontawesome -->
+                        <div class="social-icons">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/karan-kumar-kk97/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+
+                            <!-- Github -->
+                            <a href="https://github.com/KaranKumar-97/" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/ig_karan.kumar/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <!-- CV download button -->
+                        <a href="assets/Karan's Resume.pdf" class="btn btn2" download>Download CV</a>
+                    </div>
+
+                    <!-- Right part of contact which will have form -->
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/Karankumar.msit@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section starts from here -->
+    <footer>
+        <div id="copyright">
+            <p>Copyright &copy; 2023 Karan Kumar</p>
+            <p>Github.com/KaranKumar-97</p>
+        </div>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+    
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script src="home_javascript.js"></script>
+<script src="mobile_javascript.js"></script>
+</body>
+
+
+</html>

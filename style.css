@@ -1,0 +1,455 @@
+/* IMPORTS FOR FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@500&family=Poppins:wght@600&display=swap');
+
+/* CSS RESET */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: rgb(244, 239, 239);
+}
+
+/* Removes the blue highlighting on mobiles */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.herosection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainpic {
+    margin-top: 5%;
+    width: 30rem;
+    /* position: absolute; */
+}
+
+.container {
+    padding: 10px 10%;
+    margin-top: 22px;
+    
+}
+
+nav {
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 62px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+/* ADDING UNDERLINES AS SOMETHING AFTER THE CONTENT 
+OF THE ELEMENT */
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #007dbc;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 1.2px;
+    transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+/* SHOW THE UNDERLINES WHEN THE USER HOVERS OVER 
+THE CONTENT AFTER THE ANCHOR NAV LINKS */
+nav ul li a:hover::after {
+    width: 103%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #007dbc;
+}
+
+#name{
+    color: #007dbc;
+}
+/********************************CSS for the about section *******************************************/
+#about {
+    padding: 80px 0px;
+    color: #ababab
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 5rem;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0px 40px 0px;
+}
+
+.tab-titles p{
+   color: white;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #007dbc;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 1.2px;
+    transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-links:hover::after {
+    width: 70%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.tab-contents ul li span {
+    color: #007dbc;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/******************************************* CSS FOR SKILLS SECTION  ********************************************/
+#my-skills {
+    padding: 30px 0px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.skill-list div {
+    flex: 1 1;
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    font-weight: 300;
+    border-radius: 7px;
+    transition: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.skill-list div:hover {
+    background: #007dbc;
+    transform: translatey(-15px);
+}
+
+/* ***************************************** CSS FOR Projects BEGINS FROM HERE ********************  */
+#Projects {
+    padding: 50px 0px;
+}
+
+.work-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 5rem;
+}
+
+.work {
+    flex: 0 0 calc(48% - 10px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    scale: 1;
+}
+
+
+.work img {
+    border-radius: 7px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.layer {
+    /* will adjust the width and the height according to the first non-static member */
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #007dbc);
+    border-radius: 7px;
+
+    /* shift the layer upwards, using absolute. Means it will be relative to the first 
+    non static member in the documnet object model */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+
+    /* To bring everything in the center of the layer div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    font-size: 14px;
+    text-align: center;
+
+    /*transition for slow popping up */
+    transition: all 0.3s ease-out;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.layer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #007dbc;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #007dbc;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 14px 50px;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #007dbc;
+}
+
+/* ***************************************** CONTACT-ME SECTION STARTS FROM HERE &**************************** */
+#contact {
+    padding: 30px 0px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    border-radius: 6px;
+    resize: none;
+}
+
+form input:hover,
+form textarea:hover {
+    border: 1px solid #007dbc;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #007dbc;
+    margin-right: 15px;
+    font-style: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ababab;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: black;
+}
+
+.social-icons a:hover {
+    color: #007dbc;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+
+    /* Now download button becomes an inline+block element
+    Since inline, takes only that much space which it requires
+    => margins on x vanshies but on y remains, this brings the button on left side */
+    display: inline-block;
+}
+
+/*******************************************CSS FOR THE FOOTER SECTION ******************************/
+#copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* ***************************************** SCROLL-BAR CUSTOMISATION *******************************/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #007dbc;
+    border-radius: 3px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #950331;
+}
+
+/* For fixed navbar */
+nav,
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 83%;
+    z-index: 12;
+    background: rgba(1,1,1,0.8);
+}
