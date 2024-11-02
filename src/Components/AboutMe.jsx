@@ -218,12 +218,12 @@ export default function AboutMe({ sectionRef }) {
               className={`absolute top-0 left-0 z-10 w-full h-full duration-700 ${
                 isIntersecting ? "opacity-0" : ""
               }`}
-              src="assets/Me.png"
+              src="assets/ME.png"
               alt=""
             />
             <img
               className="w-full h-full white-outline"
-              src="assets/Me.png"
+              src="/assets/ME.png"
               alt=""
             />
           </div>
