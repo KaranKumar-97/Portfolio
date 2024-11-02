@@ -42,8 +42,8 @@ function Socials() {
           My <span className="text-[#CBACF9]">Profiles</span>{" "}
         </p>
       </div>
-      <div className={`grow flex flex-col container p-5 h-48 mx-auto gap-5`}>
-        <div className={`grow-[1] flex gap-5`}>
+      <div className={`md:grow flex flex-col container p-5 min-h-48 mx-auto gap-5`}>
+        <div className={`md:grow-[1] flex flex-wrap gap-5`}>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/karan-kumar-kk97/"

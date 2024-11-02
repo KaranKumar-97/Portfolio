@@ -44,7 +44,7 @@ const Skills = () => {
   ]
 
   return (
-    <div className="w-[92%] mx-auto mt-20 md:mt-40 " id="skills">
+    <div className="w-[98%] md:w-[92%] mx-auto mt-20 md:mt-40 " id="skills">
       <p
         ref={textRef}
         className="uppercase text-3xl md:text-6xl text-center md:text-left  font-bold"
@@ -52,11 +52,11 @@ const Skills = () => {
         Technical <span className="text-[#CBACF9]">Skills</span>{" "}
       </p>
 
-      <div className="flex flex-wrap justify-center gap-10 mt-10">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10 mt-10 mx-2">
         {skills.map((skill) => (
-            <Tilt className="flex gap-4 justify-center items-center border rounded-xl w-[70vw] h-24 md:w-52  hover:bg-indigo-950 ease-out duration-500">
+            <Tilt className="flex gap-4 justify-center items-center border rounded-xl w-[25vw] h-24 md:w-52  hover:bg-indigo-950 ease-out duration-500">
             <img src={`skills/${skill.img}`} alt="" className="w-14" />
-            <p className="font-semibold text-xl">{skill.title}</p>
+            <p className="font-semibold text-xl hidden sm:block ">{skill.title}</p>
             </Tilt>
         ))}
       </div>
