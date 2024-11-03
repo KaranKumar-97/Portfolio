@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import MagicButton from "./utils/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import { Tilt } from "react-tilt";
+
 
 const Experience = () => {
   const textRef = useRef(null);
@@ -74,7 +76,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="w-[92%] mx-auto mt-20 md:mt-40" id="experience">
+    <div className="w-[92%] md:w-[85%] mx-auto mt-20 md:mt-40" id="experience">
       <p
         ref={textRef}
         className="uppercase text-3xl md:text-6xl text-center md:text-left font-bold"
@@ -84,7 +86,7 @@ const Experience = () => {
 
       {experienceData.map((experience) => (
         <div className="mt-5 md:mt-10" data-aos="fade-up" key={experience.id}>
-          <div className="flex flex-col md:flex-row gap-10 p-3 bg-gradient-to-br from-[#010320] to-[#111325] rounded-xl border border-gray-600">
+          <Tilt  options={{ max: 10,scale:1}} className="flex flex-col md:flex-row gap-10 p-3 bg-gradient-to-br from-[#010320] to-[#111325] rounded-xl border border-gray-600">
             {experience.id === 1 && (
               <video
                 src="assets/sclogo.mp4"
@@ -130,7 +132,7 @@ const Experience = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </Tilt>
         </div>
       ))}
     </div>
