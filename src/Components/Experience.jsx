@@ -76,7 +76,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="w-[92%] md:w-[85%] mx-auto mt-20 md:mt-40" id="experience">
+    <div className="w-[92%]  mx-auto mt-20 md:mt-40" id="experience">
       <p
         ref={textRef}
         className="uppercase text-3xl md:text-6xl text-center md:text-left font-bold"
