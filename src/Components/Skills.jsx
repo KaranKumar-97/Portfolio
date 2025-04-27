@@ -28,19 +28,25 @@ const Skills = () => {
   }, []);
 
   const skills= [
-    {img:"html.png",title:"HTML"},
-    {img:"css.png",title:"CSS"},
+    {img:"react.png",title:"React"},
     {img:"tailwind.svg",title:"Tailwind CSS"},
     {img:"js.png",title:"JavaScript"},
-    {img:"react.png",title:"React"},
+    {img:"ts.png",title:"Typescript"},
+    {img: "mui.png",title:"MUI"},
     {img:"reactquery.png",title:"React Query"},
     {img:"redux.png",title:"Redux"},
     {img:"zustand.svg",title:"Zustand"},
     {img:"node.png",title:"Node.js"},
     {img:"express.jpg",title:"Express.js"},
     {img:"mongo.png",title:"MongoDB"},
+    {img:"postman.png",title:"Postman"},
+    {img:"dart.png",title:"Dart"},
+    {img:"flutter.png",title:"Flutter"},
+    {img:"html.png",title:"HTML"},
+    {img:"css.png",title:"CSS"},
+    {img:"c++.png",titile:"C++"},
     {img:"git.png",title:"Git"},
-    {img:"github.png",title:"GitHub"},
+    {img:"github.png",title:"GitHub"}
   ]
 
   return (

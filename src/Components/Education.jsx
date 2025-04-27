@@ -72,7 +72,6 @@ const Education = () => {
       school: "Maharaja Surajmal Institute of Technology, New Delhi",
       date: "Dec 2021 - Jul 2025",
       grade: " 8.91 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
       degree: "B.Tech Computer Science and Engineering",
     },
     {
@@ -81,7 +80,6 @@ const Education = () => {
       school: "M.S Memorial Academy, Patna",
       date: "Apr 2018 - Mar 2020",
       grade: " 86.4%",
-      //   desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
       degree: "12th CSE, Science",
     },
     {
@@ -89,8 +87,7 @@ const Education = () => {
       img: "assets/sharons.png",
       school: "Sharon's Public School, Patna",
       date: "Apr 2017 - Mar 2018",
-      grade: " 92.3%",
-      //   desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
+      grade: " 88%",
       degree: "10th CBSE",
     },
   ];
