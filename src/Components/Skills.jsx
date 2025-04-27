@@ -44,7 +44,7 @@ const Skills = () => {
     {img:"flutter.png",title:"Flutter"},
     {img:"html.png",title:"HTML"},
     {img:"css.png",title:"CSS"},
-    {img:"c++.png",titile:"C++"},
+    {img:"c++.png",title:"C++"},
     {img:"git.png",title:"Git"},
     {img:"github.png",title:"GitHub"}
   ]
