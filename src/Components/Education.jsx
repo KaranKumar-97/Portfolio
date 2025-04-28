@@ -34,7 +34,6 @@ export const EducationCard = ({ education }) => {
       contentArrowStyle={{
         borderRight: "7px solid  rgba(255, 255, 255, 0.3)",
       }}
-      date={education.date}
     >
       <div className="flex items-center">
         <img
