@@ -177,7 +177,7 @@ export default function AboutMe({ sectionRef }) {
           </div>
         </div>
       </div>
-      <div className="md:container md:mx-auto flex flex-col-reverse md:flex-row items-end gap-8 px-8 py-10 mt-[3vw]">
+      <div className="md:container md:mx-auto flex flex-col-reverse md:flex-row items-end gap-8 px-8 py-10 mt-[4vw]">
         <div className="w-full lg:w-3/4">
           <div className="overflow-y-clip">
             <h1 ref={MeRef[0]} className="text-xl sm:text-5xl font-extrabold ">
@@ -187,15 +187,16 @@ export default function AboutMe({ sectionRef }) {
           <hr className="border-primary border-2 mt-4" />
           <div className="mt-4 flex flex-wrap gap-1">
             {[
+              "Software Engineer",
               "Full Stack Developer",
               "Problem Solver(DSA)",
-              "Graphic Designer",
-              "Video Editor",
+              "Graphic Designer & Video Editor",
+              
             ].map((value, index) => (
               <div
                 key={index}
                 ref={tagsRef[index]}
-                className="cursor-pointer fill-hover relative grow border-2 border-white/10 rounded-lg flex p-2 lg:p-4 justify-center hover:grow-[2] transition-[flex-grow] duration-300 text-sm hover:bg-gray-900"
+                className="cursor-pointer fill-hover relative grow border-2 border-white/10 rounded-lg flex p-2 lg:py-3 lg:px-1 justify-center hover:grow-[2] transition-[flex-grow] duration-300 text-sm hover:bg-gray-900"
               >
                 <span>{value}</span>
               </div>
@@ -205,11 +206,7 @@ export default function AboutMe({ sectionRef }) {
             ref={MeRef[1]}
             className="text-justify mt-6 text-xs font-light md:text-base mb-4"
           >
-            I'm Karan Kumar, a final-year B.Tech CSE student at MSIT,
-            specializing in full-stack development using the MERN stack. With a
-            strong grasp of Data Structures and Algorithms, I excel in building
-            dynamic web applications and solving complex coding challenges,
-            continuously exploring new technologies to enhance my skills.
+          I'm <strong>Karan Kumar</strong>, a <strong>Software Engineer</strong> at <strong>Salescode</strong>, building <strong>scalable frontends</strong> using <strong>React</strong> and <strong>Flutter</strong>. Leveraging the full <strong>Software Development Life Cycle (SDLC)</strong>, I develop code that is not only <strong>functional</strong> but also <strong>robust</strong>, <strong>scalable</strong>, and <strong>easy to maintain</strong> in real-world production environments. With a <strong>B.Tech in Computer Science and Engineering</strong> and a strong foundation in <strong>full-stack development</strong> and <strong>Data Structures and Algorithms</strong>, my focus remains on delivering <strong>efficient, high-quality solutions</strong> while continuously exploring new technologies.
           </p>
         </div>
         <div className="w-full md:w-1/2 overflow-y-clip">
