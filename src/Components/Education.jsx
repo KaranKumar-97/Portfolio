@@ -70,7 +70,7 @@ const Education = () => {
       img: "assets/msit.png",
       school: "Maharaja Surajmal Institute of Technology, New Delhi",
       date: "Dec 2021 - Jul 2025",
-      grade: " 8.91 CGPA",
+      grade: " 9.07 CGPA",
       degree: "B.Tech Computer Science and Engineering",
     },
     {
